@@ -10,6 +10,9 @@
     font-family: "JustOldFashion";
 
 }
+a {
+    text-decoration: none;
+}
 .wrapper {
     width: 100%;
     min-height: 800px ;
@@ -17,24 +20,59 @@
 header {
     padding: 0 5%;
     background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .logo {
     width: 200px;
-    display: inline-block;
-    vertical-align: top;
 }
 .logo img {
     width: 200px;
-    height: 90px;
+    height: 80px;
     background: url('../img/logo.png') no-repeat;
 }
-.social {
-    display: inline-block;
-    padding: 30px 0;
-}
+
 .social a svg:hover .socialSvg {
     fill: #c82664;
 }
+.social a {
+    margin-left: 3em;
+}
+.social a:first-child {
+    margin-left: 0;
+}
+.onlineRegistration a{
+    padding: 16px;
+    background: #c82664;
+    color: white;
+}
+.call {
+    justify-content: flex-end;
+}
+.call a {
+    font-size: 1.5em;
+    color: white;
+}
+.pink:hover {
+color: #c82664;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 nav {
     min-height: 40px;
     padding: 0 5%;
@@ -63,11 +101,44 @@ nav a {
     transition: transform .5s;
     font-size:0;
     will-change: transform;
+    position: relative;
+}
+#sliderItems .text {
+    position: absolute;
+    width: 37%;
+    height: inherit;
+
 }
 #sliderItems h2 {
     font-size: 2.5rem;
+    padding: 20% 0 0 7%;
+    white-space: normal;
     font-weight: 500;
     line-height: 1.2;
+}
+#sliderItems p {
+    font-size: 1rem;
+    padding: 2% 0 0 7%;
+    white-space: normal;
+    font-weight: 500;
+    line-height: 1.2;
+}
+#sliderItems .info {
+    padding: 4rem 0 0 7%;
+}
+
+
+#sliderItems a {
+    border: 1px solid black;
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+#sliderItems a:hover {
+    color: #c82664;
+    border: 1px solid #c82664;
 }
 .slide {
     width: 100%;
